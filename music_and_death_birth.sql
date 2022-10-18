@@ -16,25 +16,27 @@
 /*!40111 SET @OLD_SQL_NOTES=@@SQL_NOTES, SQL_NOTES=0 */;
 
 --
--- Table structure for table `music`
+-- Table structure for table `birth`
 --
 
-DROP TABLE IF EXISTS `music`;
+DROP TABLE IF EXISTS `birth`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
 /*!50503 SET character_set_client = utf8mb4 */;
-CREATE TABLE `music` (
-  `music_id` int NOT NULL AUTO_INCREMENT,
-  PRIMARY KEY (`music_id`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+CREATE TABLE `birth` (
+  `musician_id` int NOT NULL AUTO_INCREMENT,
+  `birth` date NOT NULL,
+  PRIMARY KEY (`musician_id`)
+) ENGINE=InnoDB AUTO_INCREMENT=47 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
--- Dumping data for table `music`
+-- Dumping data for table `birth`
 --
 
-LOCK TABLES `music` WRITE;
-/*!40000 ALTER TABLE `music` DISABLE KEYS */;
-/*!40000 ALTER TABLE `music` ENABLE KEYS */;
+LOCK TABLES `birth` WRITE;
+/*!40000 ALTER TABLE `birth` DISABLE KEYS */;
+INSERT INTO `birth` VALUES (1,'1940-10-09'),(2,'1967-02-20'),(3,'1946-11-16'),(4,'1966-08-20'),(5,'1956-12-06'),(6,'1935-01-08'),(7,'1972-02-17'),(8,'1942-09-18'),(9,'1962-02-10'),(10,'1966-11-17'),(11,'1958-08-29'),(12,'1943-12-08'),(13,'1946-07-09'),(14,'1948-05-31'),(15,'1943-12-31'),(16,'1954-10-03'),(17,'1964-07-20'),(18,'1976-03-20'),(19,'1981-02-09'),(20,'1972-04-08'),(21,'1983-09-14'),(22,'1947-09-30'),(23,'1951-02-20'),(24,'1952-07-15'),(25,'1967-08-22'),(26,'1947-01-08'),(27,'1945-10-05'),(28,'1957-05-10'),(29,'1951-05-19'),(30,'1944-01-24'),(31,'1926-10-18'),(32,'1956-07-15'),(33,'1942-04-26'),(34,'1949-12-22'),(35,'1959-01-08'),(36,'1949-04-28'),(37,'1932-02-26'),(38,'1960-01-22'),(39,'1943-03-22'),(40,'1925-08-21'),(41,'1956-08-29'),(42,'1953-12-12'),(43,'1967-05-13'),(44,'1968-03-22'),(45,'1963-11-06'),(46,'1942-07-10');
+/*!40000 ALTER TABLE `birth` ENABLE KEYS */;
 UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
 
@@ -46,4 +48,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2022-10-17 22:40:54
+-- Dump completed on 2022-10-17 22:40:53
