@@ -23,14 +23,11 @@ DROP TABLE IF EXISTS `death`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
 /*!50503 SET character_set_client = utf8mb4 */;
 CREATE TABLE `death` (
-  `death_id` int NOT NULL AUTO_INCREMENT,
+  `musician_id` int NOT NULL AUTO_INCREMENT,
   `death_date` date NOT NULL,
-  `death_cause` varchar(45) DEFAULT NULL,
-  `death_age` varchar(45) NOT NULL,
-  `separated_parents` varchar(45) DEFAULT NULL,
-  `death_cause_inf` mediumtext,
-  PRIMARY KEY (`death_id`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+  `death_age` int NOT NULL,
+  PRIMARY KEY (`musician_id`)
+) ENGINE=InnoDB AUTO_INCREMENT=14 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -39,6 +36,7 @@ CREATE TABLE `death` (
 
 LOCK TABLES `death` WRITE;
 /*!40000 ALTER TABLE `death` DISABLE KEYS */;
+INSERT INTO `death` VALUES (1,'1980-12-08',40),(2,'1994-04-05',27),(3,'1991-11-24',45),(4,'2004-12-08',38),(5,'1982-03-19',25),(6,'1977-08-16',42),(7,'2022-03-25',50),(8,'1970-09-18',27),(9,'1986-09-27',24),(10,'1997-05-29',30),(11,'2009-06-25',50),(12,'1971-07-03',27),(13,'1980-02-19',33);
 /*!40000 ALTER TABLE `death` ENABLE KEYS */;
 UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
@@ -51,4 +49,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2022-10-22 16:39:56
+-- Dump completed on 2022-10-24 22:08:30
