@@ -16,25 +16,27 @@
 /*!40111 SET @OLD_SQL_NOTES=@@SQL_NOTES, SQL_NOTES=0 */;
 
 --
--- Table structure for table `music`
+-- Table structure for table `cause_death`
 --
 
-DROP TABLE IF EXISTS `music`;
+DROP TABLE IF EXISTS `cause_death`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
 /*!50503 SET character_set_client = utf8mb4 */;
-CREATE TABLE `music` (
-  `music_id` int NOT NULL AUTO_INCREMENT,
-  PRIMARY KEY (`music_id`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+CREATE TABLE `cause_death` (
+  `death_id` int NOT NULL AUTO_INCREMENT,
+  `cause` varchar(45) DEFAULT NULL,
+  PRIMARY KEY (`death_id`)
+) ENGINE=InnoDB AUTO_INCREMENT=6 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
--- Dumping data for table `music`
+-- Dumping data for table `cause_death`
 --
 
-LOCK TABLES `music` WRITE;
-/*!40000 ALTER TABLE `music` DISABLE KEYS */;
-/*!40000 ALTER TABLE `music` ENABLE KEYS */;
+LOCK TABLES `cause_death` WRITE;
+/*!40000 ALTER TABLE `cause_death` DISABLE KEYS */;
+INSERT INTO `cause_death` VALUES (1,'homicide'),(2,'suicide'),(3,'overdose'),(4,'car accident'),(5,'plane crash');
+/*!40000 ALTER TABLE `cause_death` ENABLE KEYS */;
 UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
 
