@@ -1,4 +1,4 @@
--- MySQL dump 10.13  Distrib 8.0.29, for Linux (x86_64)
+-- MySQL dump 10.13  Distrib 8.0.31, for Win64 (x86_64)
 --
 -- Host: localhost    Database: music_and_death
 -- ------------------------------------------------------
@@ -26,7 +26,7 @@ CREATE TABLE `cause_death` (
   `death_id` int NOT NULL AUTO_INCREMENT,
   `cause` varchar(45) DEFAULT NULL,
   PRIMARY KEY (`death_id`)
-) ENGINE=InnoDB AUTO_INCREMENT=6 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=10 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -35,7 +35,7 @@ CREATE TABLE `cause_death` (
 
 LOCK TABLES `cause_death` WRITE;
 /*!40000 ALTER TABLE `cause_death` DISABLE KEYS */;
-INSERT INTO `cause_death` VALUES (1,'homicide'),(2,'suicide'),(3,'overdose'),(4,'car accident'),(5,'plane crash');
+INSERT INTO `cause_death` VALUES (1,'homicide'),(2,'suicide'),(3,'drug overdose'),(4,'car accident'),(5,'plane crash'),(6,'AIDS'),(7,'heart disease'),(8,'alcohol overdose'),(9,'drawning');
 /*!40000 ALTER TABLE `cause_death` ENABLE KEYS */;
 UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
@@ -48,4 +48,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2022-12-15 20:06:40
+-- Dump completed on 2022-12-16  8:55:35
