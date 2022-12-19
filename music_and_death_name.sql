@@ -16,27 +16,27 @@
 /*!40111 SET @OLD_SQL_NOTES=@@SQL_NOTES, SQL_NOTES=0 */;
 
 --
--- Table structure for table `cause_death`
+-- Table structure for table `name`
 --
 
-DROP TABLE IF EXISTS `cause_death`;
+DROP TABLE IF EXISTS `name`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
 /*!50503 SET character_set_client = utf8mb4 */;
-CREATE TABLE `cause_death` (
-  `death_id` int NOT NULL AUTO_INCREMENT,
-  `cause` varchar(45) DEFAULT NULL,
-  PRIMARY KEY (`death_id`)
-) ENGINE=InnoDB AUTO_INCREMENT=10 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+CREATE TABLE `name` (
+  `name_id` int NOT NULL,
+  `name_type` int DEFAULT NULL,
+  PRIMARY KEY (`name_id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
--- Dumping data for table `cause_death`
+-- Dumping data for table `name`
 --
 
-LOCK TABLES `cause_death` WRITE;
-/*!40000 ALTER TABLE `cause_death` DISABLE KEYS */;
-INSERT INTO `cause_death` VALUES (1,'homicide'),(2,'suicide'),(3,'drug overdose'),(4,'car accident'),(5,'plane crash'),(6,'AIDS'),(7,'heart disease'),(8,'alcohol overdose'),(9,'drawning');
-/*!40000 ALTER TABLE `cause_death` ENABLE KEYS */;
+LOCK TABLES `name` WRITE;
+/*!40000 ALTER TABLE `name` DISABLE KEYS */;
+INSERT INTO `name` VALUES (1,NULL);
+/*!40000 ALTER TABLE `name` ENABLE KEYS */;
 UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
 
