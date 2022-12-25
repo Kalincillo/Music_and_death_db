@@ -24,8 +24,9 @@ DROP TABLE IF EXISTS `music`;
 /*!50503 SET character_set_client = utf8mb4 */;
 CREATE TABLE `music` (
   `music_id` int NOT NULL AUTO_INCREMENT,
+  `genre` varchar(45) DEFAULT NULL,
   PRIMARY KEY (`music_id`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=13 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -34,6 +35,7 @@ CREATE TABLE `music` (
 
 LOCK TABLES `music` WRITE;
 /*!40000 ALTER TABLE `music` DISABLE KEYS */;
+INSERT INTO `music` VALUES (1,'pop'),(2,'rock'),(3,'hip-hop'),(4,'electronic'),(5,'country'),(6,'folk'),(7,'classical'),(8,'metal'),(9,'jazz'),(10,'new age'),(11,'blues'),(12,'latin');
 /*!40000 ALTER TABLE `music` ENABLE KEYS */;
 UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
@@ -46,4 +48,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2022-12-24 13:35:59
+-- Dump completed on 2022-12-25 12:27:37
