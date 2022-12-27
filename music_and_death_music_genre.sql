@@ -1,4 +1,4 @@
--- MySQL dump 10.13  Distrib 8.0.29, for Linux (x86_64)
+-- MySQL dump 10.13  Distrib 8.0.31, for Win64 (x86_64)
 --
 -- Host: localhost    Database: music_and_death
 -- ------------------------------------------------------
@@ -16,27 +16,27 @@
 /*!40111 SET @OLD_SQL_NOTES=@@SQL_NOTES, SQL_NOTES=0 */;
 
 --
--- Table structure for table `music`
+-- Table structure for table `music_genre`
 --
 
-DROP TABLE IF EXISTS `music`;
+DROP TABLE IF EXISTS `music_genre`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
 /*!50503 SET character_set_client = utf8mb4 */;
-CREATE TABLE `music` (
-  `music_id` int NOT NULL AUTO_INCREMENT,
-  `genre` varchar(45) DEFAULT NULL,
-  PRIMARY KEY (`music_id`)
-) ENGINE=InnoDB AUTO_INCREMENT=13 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+CREATE TABLE `music_genre` (
+  `musician_id` int NOT NULL AUTO_INCREMENT,
+  `genre_id` int NOT NULL,
+  PRIMARY KEY (`musician_id`,`genre_id`)
+) ENGINE=InnoDB AUTO_INCREMENT=16 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
--- Dumping data for table `music`
+-- Dumping data for table `music_genre`
 --
 
-LOCK TABLES `music` WRITE;
-/*!40000 ALTER TABLE `music` DISABLE KEYS */;
-INSERT INTO `music` VALUES (1,'pop'),(2,'rock'),(3,'hip-hop'),(4,'electronic'),(5,'country'),(6,'folk'),(7,'classical'),(8,'metal'),(9,'jazz'),(10,'new age'),(11,'blues'),(12,'latin');
-/*!40000 ALTER TABLE `music` ENABLE KEYS */;
+LOCK TABLES `music_genre` WRITE;
+/*!40000 ALTER TABLE `music_genre` DISABLE KEYS */;
+INSERT INTO `music_genre` VALUES (1,2),(2,2),(3,2),(4,8),(5,8),(6,2),(7,2),(8,2),(9,8),(10,2),(11,1),(12,2),(13,2),(14,2),(15,5);
+/*!40000 ALTER TABLE `music_genre` ENABLE KEYS */;
 UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
 
@@ -48,4 +48,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2022-12-25 12:27:37
+-- Dump completed on 2022-12-27 13:35:06
