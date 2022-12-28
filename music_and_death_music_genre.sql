@@ -26,7 +26,7 @@ CREATE TABLE `music_genre` (
   `musician_id` int NOT NULL AUTO_INCREMENT,
   `genre_id` int NOT NULL,
   PRIMARY KEY (`musician_id`,`genre_id`)
-) ENGINE=InnoDB AUTO_INCREMENT=16 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=38 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -35,7 +35,7 @@ CREATE TABLE `music_genre` (
 
 LOCK TABLES `music_genre` WRITE;
 /*!40000 ALTER TABLE `music_genre` DISABLE KEYS */;
-INSERT INTO `music_genre` VALUES (1,2),(2,2),(3,2),(4,8),(5,8),(6,2),(7,2),(8,2),(9,8),(10,2),(11,1),(12,2),(13,2),(14,2),(15,5);
+INSERT INTO `music_genre` VALUES (1,2),(2,2),(3,2),(4,8),(5,8),(6,2),(7,2),(8,2),(9,8),(10,2),(11,1),(12,2),(13,2),(14,2),(15,5),(16,11),(17,2),(18,2),(19,8),(20,8),(21,9),(22,2),(23,2),(24,2),(25,2),(26,2),(27,2),(28,2),(29,2),(30,1),(31,11),(32,2),(33,2),(34,1),(35,2),(36,2),(37,5);
 /*!40000 ALTER TABLE `music_genre` ENABLE KEYS */;
 UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
@@ -48,4 +48,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2022-12-27 13:35:06
+-- Dump completed on 2022-12-28 14:41:10
