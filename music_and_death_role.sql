@@ -16,27 +16,27 @@
 /*!40111 SET @OLD_SQL_NOTES=@@SQL_NOTES, SQL_NOTES=0 */;
 
 --
--- Table structure for table `music_genre`
+-- Table structure for table `role`
 --
 
-DROP TABLE IF EXISTS `music_genre`;
+DROP TABLE IF EXISTS `role`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
 /*!50503 SET character_set_client = utf8mb4 */;
-CREATE TABLE `music_genre` (
-  `musician_id` int NOT NULL AUTO_INCREMENT,
-  `genre_id` int NOT NULL,
-  PRIMARY KEY (`musician_id`,`genre_id`)
-) ENGINE=InnoDB AUTO_INCREMENT=51 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+CREATE TABLE `role` (
+  `role_id` int NOT NULL AUTO_INCREMENT,
+  `role` varchar(45) DEFAULT NULL,
+  PRIMARY KEY (`role_id`)
+) ENGINE=InnoDB AUTO_INCREMENT=5 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
--- Dumping data for table `music_genre`
+-- Dumping data for table `role`
 --
 
-LOCK TABLES `music_genre` WRITE;
-/*!40000 ALTER TABLE `music_genre` DISABLE KEYS */;
-INSERT INTO `music_genre` VALUES (1,2),(2,2),(3,2),(4,8),(5,8),(6,2),(7,2),(8,2),(9,8),(10,2),(11,1),(12,2),(13,2),(14,2),(15,5),(16,11),(17,2),(18,2),(19,8),(20,8),(21,9),(22,2),(23,2),(24,2),(25,2),(26,2),(27,2),(28,2),(29,2),(30,1),(31,11),(32,2),(33,2),(34,1),(35,2),(36,2),(37,5),(38,2),(39,2),(40,2),(41,2),(42,2),(43,8),(44,8),(45,2),(46,8),(47,1),(48,3),(49,1),(50,1);
-/*!40000 ALTER TABLE `music_genre` ENABLE KEYS */;
+LOCK TABLES `role` WRITE;
+/*!40000 ALTER TABLE `role` DISABLE KEYS */;
+INSERT INTO `role` VALUES (1,'singer'),(2,'guitarrist'),(3,'drummer'),(4,'bassist');
+/*!40000 ALTER TABLE `role` ENABLE KEYS */;
 UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
 
@@ -48,4 +48,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2022-12-29 14:12:40
+-- Dump completed on 2022-12-29 14:12:39
