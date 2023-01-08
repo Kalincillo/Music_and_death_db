@@ -26,7 +26,7 @@ CREATE TABLE `cause_death` (
   `death_id` int NOT NULL AUTO_INCREMENT,
   `cause` varchar(45) DEFAULT NULL,
   PRIMARY KEY (`death_id`)
-) ENGINE=InnoDB AUTO_INCREMENT=19 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=20 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -35,7 +35,7 @@ CREATE TABLE `cause_death` (
 
 LOCK TABLES `cause_death` WRITE;
 /*!40000 ALTER TABLE `cause_death` DISABLE KEYS */;
-INSERT INTO `cause_death` VALUES (1,'homicide'),(2,'suicide'),(3,'drug overdose'),(4,'car accident'),(5,'aircraft accident'),(6,'AIDS'),(7,'heart disease'),(8,'alcohol overdose'),(9,'drawning'),(10,'cancer'),(11,'natural'),(12,'pneumonia'),(13,'diabetes'),(14,'electrocution'),(15,'brain disorder'),(16,'not reported'),(17,'Falling'),(18,'accidental self-inflicted gunshot');
+INSERT INTO `cause_death` VALUES (1,'homicide'),(2,'suicide'),(3,'drug overdose'),(4,'car accident'),(5,'aircraft accident'),(6,'AIDS'),(7,'heart disease'),(8,'alcohol overdose'),(9,'drawning'),(10,'cancer'),(11,'natural'),(12,'pneumonia'),(13,'diabetes'),(14,'electrocution'),(15,'brain disorder'),(16,'not reported'),(17,'Falling'),(18,'accidental self-inflicted gunshot'),(19,'surgery');
 /*!40000 ALTER TABLE `cause_death` ENABLE KEYS */;
 UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
@@ -48,4 +48,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2023-01-04 22:57:43
+-- Dump completed on 2023-01-08 13:58:20
