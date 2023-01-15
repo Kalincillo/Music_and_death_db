@@ -1,3 +1,5 @@
+
+
 SELECT 
     cities.id Id,
     cities.name City,
@@ -9,4 +11,4 @@ FROM
     states ON cities.state_id = states.id
         JOIN
     countries ON states.country_id = countries.id
-where cities.name = ""
+where cities.name like "%los angeles%";
