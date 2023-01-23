@@ -1,8 +1,8 @@
--- MySQL dump 10.13  Distrib 8.0.29, for Linux (x86_64)
+-- MySQL dump 10.13  Distrib 8.0.31, for Win64 (x86_64)
 --
 -- Host: localhost    Database: music_and_death
 -- ------------------------------------------------------
--- Server version	8.0.32
+-- Server version	8.0.31
 
 /*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
 /*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
@@ -26,7 +26,7 @@ CREATE TABLE `cause_death` (
   `death_id` int NOT NULL AUTO_INCREMENT,
   `cause` varchar(45) DEFAULT NULL,
   PRIMARY KEY (`death_id`)
-) ENGINE=InnoDB AUTO_INCREMENT=23 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=24 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -35,7 +35,7 @@ CREATE TABLE `cause_death` (
 
 LOCK TABLES `cause_death` WRITE;
 /*!40000 ALTER TABLE `cause_death` DISABLE KEYS */;
-INSERT INTO `cause_death` VALUES (1,'homicide'),(2,'suicide'),(3,'drug overdose'),(4,'car/motorcycle accident'),(5,'aircraft accident'),(6,'AIDS'),(7,'heart disease'),(8,'alcohol related'),(9,'drawning'),(10,'cancer'),(11,'natural'),(12,'pneumonia'),(13,'diabetes'),(14,'electrocution'),(15,'brain related'),(16,'unknown'),(17,'Falling'),(18,'accidental self-inflicted gunshot'),(19,'surgery'),(20,'tuberculosis'),(21,'Burned'),(22,'kidney related');
+INSERT INTO `cause_death` VALUES (1,'homicide'),(2,'suicide'),(3,'drug overdose'),(4,'car/motorcycle accident'),(5,'aircraft accident'),(6,'AIDS'),(7,'heart disease'),(8,'alcohol related'),(9,'drawning'),(10,'cancer'),(11,'natural'),(12,'pneumonia'),(13,'diabetes'),(14,'electrocution'),(15,'brain related'),(16,'unknown'),(17,'Falling'),(18,'accidental self-inflicted gunshot'),(19,'surgery'),(20,'tuberculosis'),(21,'Burned'),(22,'kidney related'),(23,'pancreatitis');
 /*!40000 ALTER TABLE `cause_death` ENABLE KEYS */;
 UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
@@ -48,4 +48,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2023-01-22 18:30:13
+-- Dump completed on 2023-01-23  6:50:03
