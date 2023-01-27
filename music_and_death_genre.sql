@@ -1,10 +1,10 @@
 CREATE DATABASE  IF NOT EXISTS `music_and_death` /*!40100 DEFAULT CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci */ /*!80016 DEFAULT ENCRYPTION='N' */;
 USE `music_and_death`;
--- MySQL dump 10.13  Distrib 8.0.31, for Win64 (x86_64)
+-- MySQL dump 10.13  Distrib 8.0.29, for Linux (x86_64)
 --
 -- Host: localhost    Database: music_and_death
 -- ------------------------------------------------------
--- Server version	8.0.31
+-- Server version	8.0.32
 
 /*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
 /*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
@@ -37,7 +37,7 @@ CREATE TABLE `genre` (
 
 LOCK TABLES `genre` WRITE;
 /*!40000 ALTER TABLE `genre` DISABLE KEYS */;
-INSERT INTO `genre` VALUES (1,'pop'),(2,'rock'),(3,'hip-hop'),(4,'electronic'),(5,'country'),(6,'folk'),(7,'classical'),(8,'metal'),(9,'jazz'),(10,'new age'),(11,'blues'),(12,'latin'),(13,'funk'),(14,'ska'),(15,'Reggae');
+INSERT INTO `genre` VALUES (1,'pop'),(2,'rock'),(3,'hip-hop'),(4,'electronic'),(5,'country'),(6,'folk'),(7,'classical'),(8,'metal'),(9,'jazz'),(10,'new age'),(11,'blues/soul/r&b'),(12,'latin'),(13,'funk'),(14,'ska'),(15,'Reggae');
 /*!40000 ALTER TABLE `genre` ENABLE KEYS */;
 UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
@@ -50,4 +50,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2023-01-26 14:03:06
+-- Dump completed on 2023-01-26 21:39:24
