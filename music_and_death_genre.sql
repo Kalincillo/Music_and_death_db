@@ -37,7 +37,7 @@ CREATE TABLE `genre` (
 
 LOCK TABLES `genre` WRITE;
 /*!40000 ALTER TABLE `genre` DISABLE KEYS */;
-INSERT INTO `genre` VALUES (1,'pop'),(2,'rock'),(3,'hip-hop'),(4,'electronic'),(5,'country'),(6,'folk'),(7,'classical'),(8,'metal'),(9,'jazz'),(10,'new age'),(11,'blues/soul/r&b'),(12,'latin'),(13,'funk'),(14,'ska'),(15,'Reggae');
+INSERT INTO `genre` VALUES (1,'pop'),(2,'rock'),(3,'hip-hop'),(4,'electronic'),(5,'country'),(6,'folk'),(7,'classical'),(8,'metal'),(9,'jazz'),(10,'new age'),(11,'blues'),(12,'latin'),(13,'funk'),(14,'ska'),(15,'Reggae');
 /*!40000 ALTER TABLE `genre` ENABLE KEYS */;
 UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
@@ -50,4 +50,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2023-01-27  7:56:04
+-- Dump completed on 2023-01-28  8:11:13
