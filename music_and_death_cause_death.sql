@@ -37,7 +37,7 @@ CREATE TABLE `cause_death` (
 
 LOCK TABLES `cause_death` WRITE;
 /*!40000 ALTER TABLE `cause_death` DISABLE KEYS */;
-INSERT INTO `cause_death` VALUES (1,'homicide'),(2,'suicide'),(3,'drugs related'),(4,'car/motorcycle accident'),(5,'aircraft accident'),(6,'AIDS'),(7,'heart disease'),(8,'alcohol related'),(9,'drawning'),(10,'cancer'),(11,'natural causes'),(12,'respiratory disease'),(13,'diabetes'),(14,'electrocution'),(15,'brain related'),(16,'unknown'),(17,'fall accident'),(18,'accidental self-inflicted gunshot'),(19,'surgery'),(20,'tuberculosis'),(21,'Burned'),(22,'kidney related'),(23,'pancreatitis');
+INSERT INTO `cause_death` VALUES (1,'homicide'),(2,'suicide'),(3,'drugs related'),(4,'car/motorcycle accident'),(5,'aircraft accident'),(6,'AIDS'),(7,'heart disease'),(8,'alcohol related'),(9,'drawning'),(10,'cancer'),(11,'natural causes'),(12,'respiratory disease'),(13,'diabetes'),(14,'electrocution'),(15,'brain related'),(16,'unknown'),(17,' accident'),(18,'accidental self-inflicted gunshot'),(19,'surgery'),(20,'tuberculosis'),(21,'Burned'),(22,'kidney related'),(23,'pancreatitis');
 /*!40000 ALTER TABLE `cause_death` ENABLE KEYS */;
 UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
@@ -50,4 +50,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2023-02-21  7:44:06
+-- Dump completed on 2023-02-22  9:00:41
